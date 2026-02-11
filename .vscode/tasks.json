@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build hello",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "hello.c",
+                "-o",
+                "hello.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Générer le programme C"
+        },
+        {
+            "label": "run hello",
+            "type": "shell",
+            "command": "${workspaceFolder}/hello.exe",
+            "dependsOn": "build hello",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "detail": "Exécuter le programme C"
+        }
+    ]
+}
