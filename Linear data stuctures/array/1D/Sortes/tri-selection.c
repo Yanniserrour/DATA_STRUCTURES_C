@@ -1,9 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
 complexité : 
-meilleurs cas: O(n^2)
-pire cas  :    O(n^2)
+meilleurs,moyen pire cas: O(n^2)
 */
 void tri_selection(int V[], int max){
     int i,j,min,x ; 

@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+/*complexité : 
+meilleur, moyen, pire : O(n.log2(n))
+*/
 
 //algorithme 1 :
 void fusion (int* T , int P, int Q, int R) {
@@ -117,8 +122,5 @@ void Tri_fusion_2(int* T, int g, int d){
 
 int main (){
 //programme 
-
-    
-
     return 0;
 }
