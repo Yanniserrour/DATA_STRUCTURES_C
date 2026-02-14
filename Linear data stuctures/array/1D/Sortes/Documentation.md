@@ -1,10 +1,10 @@
-# 📊 Algorithmes de Tri en C
+# Algorithmes de Tri 
 
 Ce dépôt regroupe les implémentations et les explications théoriques des principaux algorithmes de tri. Le but est de comprendre le fonctionnement interne de chaque méthode, de la manipulation de la mémoire aux stratégies d'optimisation.
 
 ---
 
-## 🚀 Synthèse des Performances
+## Synthèse des Performances
 
 | Algorithme | Meilleur Cas | Moyenne | Pire Cas | Stabilité |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16,7 +16,7 @@ Ce dépôt regroupe les implémentations et les explications théoriques des pri
 
 ---
 
-## 🛠️ Algorithmes Élémentaires
+## Algorithmes Élémentaires
 
 ###  Tri à Bulles (Bubble Sort)
 Le tri à bulles parcourt le tableau et compare les éléments consécutifs. Si deux éléments ne sont pas dans l'ordre, ils sont permutés. À chaque passage, la plus grande valeur "remonte" à sa position définitive.
@@ -30,7 +30,7 @@ Il s'agit d'un algorithme glouton. Sur un tableau de $n$ éléments, on cherche 
 
 ---
 
-##  Algorithmes Avancés (Divide & Conquer)
+## Algorithmes Avancés (Divide & Conquer)
 
 ###  Tri par Fusion (Merge Sort)
 Souvent utilisé pour les listes chaînées, il repose sur le principe **Diviser pour régner** :

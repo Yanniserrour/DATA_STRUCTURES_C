@@ -1,51 +1,62 @@
-# Data Structures in C 🚀
+# Les Structures de Données en Langage C
 
-This repository is dedicated to the implementation and study of fundamental **Data Structures** using the C programming language.
+Ce dépôt est dédié à la mise en œuvre et à l'étude des structures de données fondamentales à l'aide du langage de programmation C. 
 
-## 📝 Overview
-
-C is a **statically-typed, middle-level language** that provides direct access to memory through pointers. This makes it the ideal language for learning how data structures work under the hood, as it requires manual memory management and precise logic.
+En informatique, une structure de données est une organisation logique des données permettant de faciliter leur manipulation et leur traitement. Elle constitue la mise en œuvre concrète d'un Type Abstrait de Données (TAD), faisant le pont entre la théorie algorithmique et la réalité matérielle.
 
 ---
 
-## 🛠 Project Structure
+## Classification des Structures de Données
 
-The implementations are categorized into two main types of data structures:
+Les structures de données sont classées ici selon leur topologie et la nature des relations entre leurs éléments.
 
-### 1. Linear Data Structures
-*Elements are arranged in a sequential manner, where each element is connected to its previous and next adjacent elements.*
+### 1. Structures de Données Linéaires
+Dans ces structures, les éléments sont organisés de manière séquentielle. Chaque élément (hormis les extrémités) possède un prédécesseur et un successeur unique.
 
-* **Arrays:**
-    * **1D Arrays:** Static and dynamic vectors.
-    * **2D Arrays:** Matrices and grids.
-* **Linked Lists:**
-    * **Singly Linked List:** Forward navigation using nodes.
-    * **Doubly Linked List:** Bi-directional navigation.
-    * **Circular Linked List:** The last node points back to the head.
-* **Stacks:** LIFO (Last-In, First-Out) structures.
-* **Queues:** FIFO (First-In, First-Out) structures.
+* **Tableaux (Statiques et Dynamiques) :** Accès direct par indice, occupation d'un bloc contigu en mémoire.
+* **Listes Chaînées :** Allocation dynamique par nœuds reliés par des pointeurs.
+    * *Simplement chaînées* : navigation unidirectionnelle.
+    * *Doublement chaînées* : navigation bidirectionnelle.
+    * *Circulaires* : le dernier élément boucle sur le premier.
+* **Piles (Stack) :** Gestion de type LIFO (Last-In, First-Out).
+* **Files (Queue) :** Gestion de type FIFO (First-In, First-Out).
 
-### 2. Non-Linear Data Structures
-*Elements are arranged in a hierarchical or interconnected way, rather than sequentially.*
+[Image of linear data structures: array, linked list, stack, and queue]
 
-* **Trees:** (e.g., Binary Search Trees, AVL Trees) for hierarchical data.
-* **Graphs:** Representing complex networks using Adjacency Lists or Matrices.
-* **Hash Tables:** Efficient data retrieval using key-value mapping and hash functions.
+### 2. Structures de Données Non-Linéaires
+Ces structures sont utilisées pour modéliser des relations plus complexes qu'une simple séquence. On les divise en trois grandes familles :
+
+#### A. Structures Arborescentes (Hiérarchiques)
+Modélisent une relation de type "Un-vers-Plusieurs". Elles sont acycliques et possèdent une racine unique.
+* Arbres Binaires de Recherche (ABR).
+* Arbres équilibrés (AVL, Arbres Rouge-Noir).
+* Tas (Heaps) pour les files de priorité.
+
+[Image of binary search tree and AVL tree structures]
+
+#### B. Structures en Réseaux (Graphes)
+Modélisent des relations de type "Plusieurs-vers-Plusieurs". Contrairement aux arbres, les graphes peuvent contenir des cycles et n'ont pas de hiérarchie imposée.
+* Représentations par matrices d'adjacence ou listes d'adjacence.
+* Algorithmes de parcours (BFS, DFS) et de recherche de chemins.
+
+[Image of graph data structure representing a network]
+
+#### C. Structures Associatives
+Basées sur une relation Clé-Valeur. Elles visent à optimiser le temps d'accès aux données indépendamment de la taille du vecteur.
+* Tables de hachage.
+* Gestion des collisions par chaînage ou adressage ouvert.
 
 ---
 
-## 💻 Technical Concepts Covered
+## Pourquoi le langage C ?
 
-To build these structures, this project explores:
-* **Pointers & Memory Addresses:** Navigating the RAM directly.
-* **Dynamic Memory Allocation:** Using `malloc()`, `calloc()`, and `free()`.
-* **Structs:** Defining custom data types for nodes and containers.
-* **Complexity:** Understanding Time ($O(n)$) and Space complexity.
+C est un langage de programmation impératif, statique de moyen niveau et à typage fort. Il est le choix de référence pour l'étude des structures de données pour plusieurs raisons fondamentales :
 
----
+### Maîtrise de la Gestion Mémoire
+C offre au développeur une marge de contrôle importante sur la machine. L'absence de ramasse-miettes (Garbage Collector) impose une gestion manuelle de l'allocation et de la libération de la mémoire via `malloc()` et `free()`. Cette approche est cruciale pour comprendre l'occupation spatiale réelle des structures.
 
-## 📚 Learning Objectives
-* Master pointer arithmetic.
-* Understand the trade-offs between different data storage methods.
-* Write memory-efficient and optimized C code.
+### Manipulation des Pointeurs
+L'utilisation directe des adresses mémoire permet de construire des structures complexes (comme les listes chaînées ou les arbres) en manipulant les liens entre les nœuds. Cela permet une optimisation fine des algorithmes et une compréhension profonde de la topologie des données.
 
+### Performance et Proximité Matérielle
+En tant que langage de moyen niveau, C permet d'écrire du code proche du
