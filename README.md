@@ -58,5 +58,3 @@ C offre au développeur une marge de contrôle importante sur la machine. L'abse
 ### Manipulation des Pointeurs
 L'utilisation directe des adresses mémoire permet de construire des structures complexes (comme les listes chaînées ou les arbres) en manipulant les liens entre les nœuds. Cela permet une optimisation fine des algorithmes et une compréhension profonde de la topologie des données.
 
-### Performance et Proximité Matérielle
-En tant que langage de moyen niveau, C permet d'écrire du code proche du
